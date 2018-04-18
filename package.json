@@ -1,5 +1,5 @@
 {
-  "name": "nodedoc-gen",
+  "name": "min-doc",
   "version": "1.0.0",
   "description": "hackable simple documentation generation template",
   "main": "index.js",
@@ -12,7 +12,10 @@
     "type": "git",
     "url": "hackable simple documentation generation template"
   },
-  "author": "Jeff Chung<chungchi300@hotmail.com",
+  "author": [
+    "Jeff Chung<chungchi300@hotmail.com",
+    "My Lovely Mandy-May this tool help you like well in desert."
+  ],
   "license": "MIT",
   "dependencies": {
     "glob": "^7.1.2",

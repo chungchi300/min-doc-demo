@@ -1,6 +1,6 @@
-## What is nodedoc
+## What is min-doc
 
-nodedoc is an **hackable simple documentation generation template** that support **.md=>html** and **.plantuml=>img** tool.
+min-doc is an **hackable simple documentation generation template** that support **.md=>html** and **.plantuml=>img** tool.
 
 ## Pretty
 
@@ -13,7 +13,7 @@ nodedoc is an **hackable simple documentation generation template** that support
 ## Usage
 
 ```
-git clone git@github.com:chungchi300/simple-nodedoc.git
+git clone git@github.com:chungchi300/min-doc.git
 npm install
 npm run generate
 /*

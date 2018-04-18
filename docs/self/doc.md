@@ -1,6 +1,6 @@
-## What is nodedoc-gen?
+## What is min-doc?
 
-**The simple and efficient doc generation tool** that are **for developers!**
+**hackable simple documentation generation template** that are **for developers!**
 
 ![Generate flow](./plantuml/gen.flow.png)
 
