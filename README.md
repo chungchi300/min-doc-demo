@@ -1,6 +1,6 @@
-## What is ndoc
+## What is nodedoc
 
-ndoc is an **hackable simple documentation generation template** that support **.md=>html** and **.plantuml=>img** tool.
+nodedoc is an **hackable simple documentation generation template** that support **.md=>html** and **.plantuml=>img** tool.
 
 ## Pretty
 
@@ -13,10 +13,18 @@ ndoc is an **hackable simple documentation generation template** that support **
 ## Usage
 
 ```
-git clone git@github.com:chungchi300/simple-ndoc.git
+git clone git@github.com:chungchi300/simple-nodedoc.git
 npm install
 npm run generate
+/*
+if you want to automatically generate file after editing.
+npm run generate-watch
+*/
 ```
+
+## Example
+
+[Self](./docs/self/gen.doc.html)
 
 ## Optional
 

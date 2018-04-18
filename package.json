@@ -1,18 +1,18 @@
 {
-  "name": "simple-ndoc",
+  "name": "nodedoc",
   "version": "1.0.0",
-  "description": "",
+  "description": "hackable simple documentation generation template",
   "main": "index.js",
   "scripts": {
     "generate": "node generate.js",
-    "generate-watch": "nodemon -e md,plantuml --watch  docs generate.js"
+    "generate-watch":
+      "nodemon -e md,plantuml --watch  docs --watch generate.js generate.js"
   },
   "repository": {
     "type": "git",
-    "url":
-      "template for documentation repository includes markdown syntax and plantuml syntax documentations with only node js dependency"
+    "url": "hackable simple documentation generation template"
   },
-  "author": "",
+  "author": "Jeff Chung<chungchi300@hotmail.com",
   "license": "MIT",
   "dependencies": {
     "glob": "^7.1.2",

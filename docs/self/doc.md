@@ -1,4 +1,4 @@
-## What is ndoc?
+## What is nodedoc?
 
 **The simple and efficient doc generation tool** that are **for developers!**
 

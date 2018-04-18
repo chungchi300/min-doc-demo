@@ -17,8 +17,29 @@ function plantumlToPng(file, destinationFileName) {
 }
 function markdownToHtml(file, destinationFileName) {
   var result = md.render(fs.readFileSync(file, "utf8"));
-
-  fs.writeFileSync(destinationFileName, result);
+  //You can add any content here!
+  fs.writeFileSync(
+    destinationFileName,
+    `
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      document.getElementsByTagName("body")[0].classList.add('markdown-body');
+    });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.css">
+    <style>
+      .markdown-body{
+        width:1024px;
+        padding: 45px;
+        word-wrap: break-word;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    ` + result
+  );
 }
 function getDestinationFileName(file) {
   let fileName = _.last(file.split("/"));
