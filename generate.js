@@ -68,4 +68,4 @@ function generate(folder) {
     });
   });
 }
-generate("./docs/self");
+generate("./docs/demo");
