@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "node generate.js"
+    "generate": "node generate.js",
+    "generate-watch": "nodemon -e md,plantuml --watch  docs generate.js"
   },
   "repository": {
     "type": "git",
-    "url": "template for documentation repository includes markdown syntax and plantuml syntax documentations with only node js dependency"
+    "url":
+      "template for documentation repository includes markdown syntax and plantuml syntax documentations with only node js dependency"
   },
   "author": "",
   "license": "MIT",
@@ -16,6 +18,7 @@
     "glob": "^7.1.2",
     "lodash": "^4.17.5",
     "markdown-it": "^8.4.1",
-    "node-plantuml": "^0.6.1"
+    "node-plantuml": "^0.6.1",
+    "nodemon": "^1.17.3"
   }
 }

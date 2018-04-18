@@ -18,7 +18,7 @@ npm install
 npm run generate
 ```
 
-## P.S
+## Optional
 
 Despite you can edit using any text editor,there is some **plugins and editor** suggested to use for **real time preview & wysiwyg**
 on **single file**
