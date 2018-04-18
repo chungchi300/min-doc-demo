@@ -1,5 +1,5 @@
 {
-  "name": "nodedoc",
+  "name": "nodedoc-gen",
   "version": "1.0.0",
   "description": "hackable simple documentation generation template",
   "main": "index.js",

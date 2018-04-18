@@ -1,4 +1,4 @@
-## What is nodedoc?
+## What is nodedoc-gen?
 
 **The simple and efficient doc generation tool** that are **for developers!**
 
