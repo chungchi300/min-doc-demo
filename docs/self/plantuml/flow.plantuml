@@ -1,0 +1,9 @@
+@startuml
+
+(*) --> "Generate Plantuml to img"
+note right: E.g demo.plantuml to gen.demo.png
+--> "Generate Markdown to html"
+note right: E.g demo.md to gen.demo.html
+--> (*)
+
+@enduml
