@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "template for documentation repository includes markdown syntax and plantuml syntax documentations with only node js dependency"
+    "url": "template for documentation repository includes markdown syntax and plantuml syntax documentations with only node js dependency"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "glob": "^7.1.2",
+    "lodash": "^4.17.5",
     "markdown-it": "^8.4.1",
     "node-plantuml": "^0.6.1"
   }

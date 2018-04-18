@@ -2,6 +2,8 @@
 
 var plantuml = require("node-plantuml");
 var fs = require("fs");
+var glob = require("glob");
+var _ = require("lodash");
 var md = require("markdown-it")({
   html: true,
   linkify: true,
@@ -18,8 +20,31 @@ function markdownToHtml(file, destinationFileName) {
 
   fs.writeFileSync(destinationFileName, result);
 }
-plantumlToPng(
-  "./docs/self/plantuml/flow.plantuml",
-  "./docs/self/img/gen.flow.png"
-);
-markdownToHtml("./docs/self/doc.md", "./docs/self/gen.doc.html");
+function getDestinationFileName(file) {
+  let fileName = _.last(file.split("/"));
+  let folder = file.replace(fileName, "");
+  let fileNameWithoutExtension = /(.*)\./.exec(fileName)[1];
+  let destinationExtension;
+  if (fileName.includes("plantuml")) {
+    destinationExtension = "png";
+  }
+  if (fileName.includes("md")) {
+    destinationExtension = "html";
+  }
+  let destinationFileName = `${folder}gen.${fileNameWithoutExtension}.${destinationExtension}`;
+
+  return destinationFileName;
+}
+function generate(folder) {
+  glob(folder + "/plantuml/*.plantuml", null, function(er, files) {
+    files.forEach(file => {
+      plantumlToPng(file, getDestinationFileName(file));
+    });
+  });
+  glob(folder + "/*.md", null, function(er, files) {
+    files.forEach(file => {
+      markdownToHtml(file, getDestinationFileName(file));
+    });
+  });
+}
+generate("./docs/self");

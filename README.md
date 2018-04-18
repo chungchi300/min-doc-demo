@@ -13,7 +13,7 @@ ndoc is an **hackable simple documentation generation template** that support **
 ## Usage
 
 ```
-git clone
+git clone git@github.com:chungchi300/simple-ndoc.git
 npm install
 npm run generate
 ```
