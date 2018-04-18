@@ -1,4 +1,4 @@
-## What is min-doc
+## What is min-doc 
 
 min-doc is an **hackable simple documentation generation template** that support **.md=>html** and **.plantuml=>img** tool.
 
@@ -13,7 +13,7 @@ min-doc is an **hackable simple documentation generation template** that support
 ## Usage
 
 ```
-git clone git@github.com:chungchi300/min-doc.git
+git clone git@github.com:chungchi300/min-doc.git yourProject
 npm install
 npm run generate
 /*
